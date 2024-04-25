@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    padding: 0px;
     border: 0px;
 }
 
@@ -11,7 +12,7 @@ body {
 .Main_container {
     position: relative;
     width: 100%;
-    min-height: 1000px;
+    min-height: 100vh;
 }
 
 .icon{
@@ -37,6 +38,7 @@ p{
     color: #FFFFFF;
     font-size: 64px;
     text-align: center;
+    padding-bottom: 4vh;
 }
 
 .container_Head_2{
@@ -187,18 +189,19 @@ p{
     font-size: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 641px) and (max-width: 1024px) {
 
     .icon{
         width: 12vh;
         height: auto;
     }
+
     .container_Head p {
         font-size: 6vh;
     }
 
     .container_Head_2 p {
-        font-size: 3vh;
+        font-size: 2.5vh;
         top: 12%;
     }
 
@@ -207,3 +210,86 @@ p{
         left: 12%;
     }
 }  
+
+@media screen and (max-width: 641px){
+
+    .icon {
+        width: 15vh;
+        height: auto;
+    }
+
+    .container_Head{
+        top: 20%;
+        height: auto;
+        width: 50vh;
+    }
+    .container_Head p {
+        font-size: 5vh;
+    }
+
+    .container_Head_2 {
+        top: 30%;
+    }
+
+    .container_Head_2 p{
+        font-size: 2vh;
+    }
+
+    .Translucent_container {
+        margin-top: 5vh;
+        width: 80%;
+        min-height: 100%;
+        left: 5%;
+    }
+
+    .name_input {
+        width: 82%;
+    }
+
+    .email_text{
+        top: 20%;
+        left: 5%;
+    }
+
+    .email_input{
+        top: 25.5%;
+        left: 5%;
+        width: 82%;
+    }
+
+    .Company_text{
+        top:  38%;
+    }
+
+    .Company_input {
+        top:  43%;
+        width: 89%;
+    }
+
+    .subject_text {
+        top: 55%;
+        left: 5.5%;
+    }
+
+    .subject_input {
+        top: 60%;
+        left: 5%;
+        width: 89%;
+    }
+    
+    .message_text{
+        top: 71%;
+    }
+
+    .message_input {
+        top: 75%;
+        width: 82%;
+        height: 8%;
+    }
+    
+    .Button_sales {
+        top: 91%;
+        height: 8%;
+        width: 89%;
+    }
+}
